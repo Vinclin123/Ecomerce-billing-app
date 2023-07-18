@@ -1,0 +1,43 @@
+{% extends "gstbillingapp/base.html" %}
+
+
+{% load static %}
+<!doctype html>
+
+{% block title %}
+D.R Trade & Marketing Royal Canin & Veterinary Products WholeSale Dealer
+{% endblock %}
+
+{% block metatags %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+	<h1 class="display-3">D.R Trade & Marketing</h1>
+	<h2 class="display-6"> <b>Royal Canin & Veterinary</b> Products WholeSale Dealer</h2>
+	<hr class="my-4">
+	<h4>
+	<ul>
+		 <li>Easily create invoices</li>
+		 <li>Manage inventory</li>
+		 <li>Keep books and track balances</li>
+	</ul>
+	</h4>
+	<p class="lead">
+		<a class="btn btn-primary btn-lg" href="{% url 'invoice_create' %}" role="button">Create Invoice</a>
+	</p>
+</div>
+
+
+
+ 	
+
+
+{% endblock %}
+
+
+

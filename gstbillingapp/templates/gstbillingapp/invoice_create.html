@@ -1,0 +1,190 @@
+{% extends "gstbillingapp/base.html" %}
+
+
+{% load static %}
+<!doctype html>
+
+{% block content %}
+<!-- invoice_create.html -->
+
+{% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+     <b> <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li></b>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<!-- Rest of your HTML content -->
+
+
+<h2>Create Invoice</h2>
+
+<form method="POST" id="invoice-form" hidden="true">
+	{% csrf_token %}
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="table-active" scope="col" colspan="4">Invoice Details</th>
+			</tr>
+		</thead>
+
+		<tbody class="two-col-form">
+			<tr>
+				<th scope="row">Invoice Number</th>
+				<td class="form-input-td"><input name="invoice-number" type="number" class="form-control" placeholder="Invoice Number" value="{{default_invoice_number}}"></td>
+				<th scope="row">Date</th>
+				<td class="form-input-td"><input name="invoice-date" type="date" class="form-control", value="{{default_invoice_date}}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="table-active" scope="col" colspan="4">Customer Details</th>
+			</tr>
+		</thead>
+
+		<tbody class="two-col-form">
+			<tr>
+				<th scope="row">Customer Name</th>
+				<td class="form-input-td customer_search_area"><input autocomplete="off" name="customer-name" type="text" class="form-control customer_search_input" id="customer-name-input" placeholder="Customer Name" required>
+				</td>
+				<th scope="row">Customer Address</th>
+				<td class="form-input-td"><input autocomplete="off" name="customer-address" type="text" class="form-control" id="customer-address-input" placeholder="Customer Address" required></td>
+			</tr>
+			<tr>
+				<th scope="row">Customer Mobile Number</th>
+				<td class="form-input-td"><input autocomplete="off" name="customer-phone" type="tel" class="form-control" id="customer-phone-input" placeholder="Customer Mobile Number"></td>
+				<th scope="row">Customer GST</th>
+				<td class="form-input-td"><input autocomplete="off" name="customer-gst" type="text" class="form-control" id="customer-gst-input" placeholder="Customer GST" maxlength="15" pattern="([A-Za-z0-9]{15})|(^$)"></td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<table class="table table-bordered">
+		<tbody class="two-col-form">
+			<tr>
+				<th scope="row">Vehicle Number</th>
+				<td class="form-input-td"><input autocomplete="off" name="vehicle-number" type="text" class="form-control" placeholder="Vehicle Number">
+				</td>
+				<th scope="row">
+					<input type="text" name="invoice-discount" id="invoice-discount" placeholder="Discount Amount" value="0">
+
+
+
+				</th>
+				<td class="form-input-td">
+					<div class="form-check">
+						<input class="form-check-input" name="igstcheck" type="checkbox" id="igstcheck">
+						<label class="form-check-label" for="igstcheck">
+							IGST
+						</label>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table table-bordered" id="invoice-form-items-table">
+		<thead>
+			<th class="table-active" scope="col" colspan="14">Items</th>
+
+			<tr>
+				<th scope="col">Sl No.</th>
+				<th scope="col">Product</th>
+				<th scope="col">HSN / SAC</th>
+				<th scope="col">Unit</th>
+				<th scope="col">Qty</th>
+				<th scope="col">Rate with GST</th>
+				<th scope="col">GST %</th>
+				<th scope="col">Rate without GST</th>
+
+
+				<th scope="col">Amt without GST</th>
+				<th scope="col">SGST</th>
+				<th scope="col">CGST</th>
+				<th scope="col">IGST</th>
+				<th scope="col">Amt with GST</th>
+				<th scope="col">Discount price</th>
+
+			</tr>
+		</thead>
+		<tbody id="invoice-form-items-table-body">
+			<tr>
+				<td class="invoice-item-slno">1</td>
+				<td class="form-input-td"><input name="invoice-product" type="text" class="form-control product_search_area product_search_input inventory_search_area" placeholder="Product"></td>
+				<td class="form-input-td"><input name="invoice-hsn" type="text" class="form-control" placeholder="HSN"></td>
+				<td class="form-input-td"><input name="invoice-unit" type="text" class="form-control" placeholder="Unit"></td>
+				<td class="form-input-td"><input name="invoice-qty" type="number" step="any" class="form-control" placeholder="Qty" id="invoice-qty" ></td>
+				<td class="form-input-td"><input name="invoice-rate-with-gst" type="number" step="any" class="form-control" placeholder="Rate with GST"></td>
+				<td class="form-input-td"><input name="invoice-gst-percentage" type="number" step="any" class="form-control" placeholder="GST %"></td>
+
+
+				<td class="form-input-td"><input name="invoice-rate-without-gst" type="number" step="any" class="form-control" placeholder="Rate without GST" readonly></td>
+				<td class="form-input-td"><input name="invoice-amt-without-gst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+				<td class="form-input-td"><input name="invoice-amt-sgst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+				<td class="form-input-td"><input name="invoice-amt-cgst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+				<td class="form-input-td"><input name="invoice-amt-igst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+				<td class="form-input-td"><input name="invoice-amt-with-gst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+				
+			</tr>
+		</tbody>
+
+		<tr>
+			<td colspan="8" class="text-right"><strong>TOTAL:</strong></td>
+			<td class="form-input-td"><input name="invoice-total-amt-without-gst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+			<td class="form-input-td"><input name="invoice-total-amt-sgst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+			<td class="form-input-td"><input name="invoice-total-amt-cgst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+			<td class="form-input-td"><input name="invoice-total-amt-igst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+			<td class="form-input-td"><input name="invoice-total-amt-with-gst" type="number" step="any" class="form-control" readonly placeholder="0.0"></td>
+			<td class="form-input-td"><input type="text" name="invoice-total-amt-with-discount" id="invoice-total-amt-with-discount" placeholder="Total Amount After Discount" readonly>
+			</td>
+		</tr>
+
+	</table>
+	
+	<button class="btn btn-primary" id="invoice-form-addrow">+</button>
+	<button class="btn btn-secondary" id="delete-last-row-button">-</button>
+	<button class="btn btn-primary" id="discount">Discount</button>
+	<button type="submit" class="btn btn-primary">Submit</button>
+	
+
+
+
+</form>
+
+
+</div>
+<div id="customer_search_bar"></div>
+<div id="product_search_bar"></div>
+<div id="inventory_search_bar"></div>
+
+
+{% endblock %}
+
+
+
+{% block includejs %}
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+<script src="{% static "gstbillingapp/js/fuse-3.4.6.min.js" %}"></script>
+<script src="{% static "gstbillingapp/js/main.js" %}"></script>
+<script>
+	$(document).ready(function() {
+		$('#delete-last-row-button').click(function(event) {
+		  event.preventDefault(); // Prevent the default form submission behavior
+		  delete_last_invoice_item_row();
+		});
+	  });
+</script>
+ <script>
+	$(document).ready(function() {
+		$('#discount').click(function(event) {
+		  event.preventDefault(); // Prevent the default form submission behavior
+		  discount();
+		});
+	  });
+</script>
+{% endblock %}

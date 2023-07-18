@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.R Trade & Marketting</title>
+    <!-- for icons  -->
+    <link rel="stylesheet" href= "https://unicons.iconscout.com/release/v4.0.0/css/line.css" >
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="{% static "assets/css/bootstrap.min.css" %}">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="{% static "assets/css/swiper-bundle.min.css" %}">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="{% static "assets/css/jquery.fancybox.min.css" %}">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="{% static "assets/css/style.css" %}">
+</head>
+
+<body class="body-fixed">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <span style="font-family: sans-serif;font-weight:1000">D.R Trader&Marketting</span>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation">
+                        <button class="menu-toggle"><span></span><span></span></button>
+                        <nav class="header-menu">
+                            <ul class="menu food-nav-menu">
+                                <li><a href="/">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="products1">Products</a></li>
+                                    <li><a href="blog">Blog</a></li>
+                                    <li><a href="contact">Contact</a></li>
+                                    <li><a href="landing_page">Admin</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends  -->
+
+    <div id="viewport">
+        <div id="js-scroll-content">
+            <section class="main-banner" id="home">
+                <div class="js-parallax-scene">
+                    <div class="banner-shape-1 w-100" data-depth="0.30">
+                        <img src="{% static "assets/images/ban-logo3.png" %}" alt="">
+                    </div>
+                    <div class="banner-shape-2 w-100" data-depth="0.25">
+                        <img src="{% static "assets/images/ban-logo2.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="banner-text">
+                                    <h1 class="h1-title">
+                                        Welcome to our
+                                        <span>D.R Trade & Marketing</span>
+                                    </h1>
+                                    <p>Royal Canin & Veterinary Products WholeSale Dealer</p>
+                                    <div class="banner-btn mt-4">
+                                        <a href="#menu" class="sec-btn">Check our Menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="banner-img-wp">
+                                    <div class="banner-img"
+                                        style="background-image: url({% static "assets/images/clr-banner-logo.png" %});">
+                                    </div>
+                                </div>
+                                <div class="banner-img-text">
+                                    <h5 class="h5-title">Taste Guarenty</h5>
+                                    <p>Taste it, love it or we’ll replace it… Guaranteed!
+                                        we believe your dog and cat will love their food so much that if they don’t …
+                                        That’s our taste guarantee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="brands-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="brand-title mb-5">
+                                <h5 class="h5-title">Trusted by 70+ companies</h5>
+                            </div>
+                            <div class="brands-row">
+                                <div class="brands-box">
+                                    <img src="{% static "assets/images/brands/b1.png" %}" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="{% static "assets/images/brands/b2.png" %}" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="{% static "assets/images/brands/b3.png" %}" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="{% static "assets/images/brands/b4.png" %}" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="{% static "assets/images/brands/b5.png" %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-sec section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sec-title text-center mb-5">
+                                <p class="sec-sub-title mb-3">About Us</p>
+                                <h2 class="h2-title">Discover Our<span>Dr.Trade Marketing</span></h2>
+                                <div class="sec-title-shape mb-4">
+                                    <img src="assets/images/title-shape.svg" alt="">
+                                </div>
+                                <p>Welcome to Dr.Trade Marketing, your trusted source for premium pet food.
+                                    We are dedicated to providing nutritious and delicious options for pets of all
+                                    breeds and sizes. With our carefully curated selection and commitment to quality,
+                                    we strive to enhance the health and happiness of your beloved furry companions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="about-video">
+                                <div class="about-video-img" style="background-image: url({% static "assets/images/last1.jpg" %});">
+                                </div>
+                                <div class="play-btn-wp">
+                                    <a href="{% static "assets/images/video.mp4" %}" data-fancybox="video" class="play-btn">
+                                        <i class="uil uil-play"></i>
+
+                                    </a>
+                                    <span>Watch The Recipe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="background-image: url({% static "assets/images/menu-bg.png" %});"
+                class="our-menu section bg-light repeat-img" id="menu">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">our menu</p>
+                                    <h2 class="h2-title">wake up early, <span>eat fresh & healthy</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="{% static "assets/images/title-shape.svg" %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-tab-wp">
+                            <div class="row">
+                                <div class="col-lg-12 m-auto">
+                                    <div class="menu-tab text-center">
+                                        <ul class="filters">
+                                            <div class="filter-active"></div>
+                                            <li class="filter" data-filter=".all, .breakfast, .lunch, .dinner">
+                                                <img src="{% static "assets/images/menu-1.png" %}" alt="">
+                                                All
+                                            </li>
+                                            <li class="filter" data-filter=".breakfast">
+                                                <img src="{% static "assets/images/menu-2.png" %}" alt="">
+                                                Breakfast
+                                            </li>
+                                            <li class="filter" data-filter=".lunch">
+                                                <img src="{% static "assets/images/menu-3.png" %}" alt="">
+                                                Lunch
+                                            </li>
+                                            <li class="filter" data-filter=".dinner">
+                                                <img src="{% static "assets/images/menu-4.png" %}" alt="">
+                                                Dinner
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-list-row">
+                            <div class="row g-xxl-5 bydefault_show" id="menu-dish">
+                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="{% static "assets/images/product-2.jpg" %}" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Bow-Wow Bowls</h3>
+                                            <p>120 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Non Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="{% static "assets/images/product-2_0.jpg" %}" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4.3
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Feline Favorites</h3>
+                                            <p>80 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Non Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>1</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="{% static "assets/images/product-3.jpg" %}" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Fin-Tastic Flavors</h3>
+                                            <p>100 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="{% static "assets/images/product-3_0.jpg" %}" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4.5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Wild Whiskers</h3>
+                                            <p>120 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Non Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="{% static "assets/images/product-4.jpg" %}" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Paw-Licking Good</h3>
+                                            <p>120 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Non Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="{% static "assets/images/product-4_0.jpg" %}" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Meow Manor</h3>
+                                            <p>120 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section class="two-col-sec section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="sec-img mt-5">
+                                <img src="{% static "assets/images/Royal_Canin_logo.png" %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="sec-text">
+                                <h2 class="xxl-title">Royal Canin</h2>
+                                <p>Royal Canin, a renowned pet food company, has established itself as a leader in the
+                                    global pet food market. With a strong focus on providing tailored nutrition for cats
+                                    and dogs, Royal Canin exports its premium pet food products to numerous countries
+                                    worldwide. By combining scientific research, quality ingredients, and a deep
+                                    understanding of pets' specific needs, Royal Canin continues to deliver
+                                    nutritionally balanced and highly palatable pet food options to pet owners across
+                                    the globe, promoting the health and well-being of beloved furry companions.</p>
+                                <p>Find the finest food for your beloved feline companion at Dr.Trade Marketin,
+                                    delivering optimal nutrition and irresistible flavors.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="two-col-sec section pt-0">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <div class="sec-text">
+                                <h2 class="xxl-title">Pedigree</h2>
+                                <p>Discover the exceptional quality of Pedigree exported pet food. Our products are
+                                    carefully crafted to provide your furry friends with the nutrition they need for a
+                                    healthy and happy life. With a focus on taste and balanced nutrition, our pet food
+                                    is made using high-quality ingredients that meet the highest standards. Trust
+                                    Pedigree to provide your pets with the nourishment they deserve.</p>
+                                <p> Give your Pet the nourishment they deserve with our
+                                    premium Pet food selection..</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1">
+                            <div class="sec-img">
+                                <img src="{% static "assets/images/dog_food.png" %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="book-table section bg-light">
+                <div class="book-table-shape">
+                    <img src="{% static "assets/images/table-leaves-shape.png" %}" alt="">
+                </div>
+
+                <div class="book-table-shape book-table-shape2">
+                    <img src="{% static "assets/images/table-leaves-shape.png" %}" alt="">
+                </div>
+
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Table</p>
+                                    <h2 class="h2-title">Opening Table</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="{% static "assets/images/title-shape.svg" %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-table-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="table-title text-center">
+                                        <h3>Monday to Thrusday</h3>
+                                        <p>9:00 am - 22:00 pm</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="call-now text-center">
+                                        <i class="uil uil-phone"></i>
+                                        <a href="tel:+91-8866998866">+91 - 8866998866</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="table-title text-center">
+                                        <h3>Friday to Sunday</h3>
+                                        <p>11::00 am to 20:00 pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <!-- services section starts  -->
+            <section class="services" id="services">
+
+                <h1 class="heading"> our <span>services</span> </h1>
+
+                <div class="box-container">
+
+                    <div class="box">
+                        <i class="fas fa-dog"></i>
+                        <h3>dog boarding</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-cat"></i>
+                        <h3>cat boarding</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-bath"></i>
+                        <h3>spa & grooming</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-drumstick-bite"></i>
+                        <h3>healthy meal</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-baseball-ball"></i>
+                        <h3>activity exercise</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>health care</h3>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- services section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="our-team section">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Our Team</p>
+                                    <h2 class="h2-title">My Clint PetFood Shops</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="{% static "assets/images/title-shape.svg" %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row team-slider">
+                            <div class="swiper-wrapper">
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url({% static "assets/images/com.jpg" %});"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Pet Supplies Plus</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url({% static "assets/images/com2sdf.jpg" %});"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Pet Link</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url({% static "assets/images/com4ew.jpg" %});"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Supplies Plus</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url({% static "assets/images/com4gfd.jpg" %});"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Pet Supplies</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url({% static "assets/images/com5yt.jpg" %});"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Pet Plazza</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-wp">
+                                <div class="swiper-button-prev swiper-button">
+                                    <i class="uil uil-angle-left"></i>
+                                </div>
+                                <div class="swiper-button-next swiper-button">
+                                    <i class="uil uil-angle-right"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials section bg-light">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">What they say</p>
+                                    <h2 class="h2-title">What our customers <span>say about us</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="{% static "assets/images/title-shape.svg" %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="testimonials-img">
+                                    <img src="{% static "assets/images/custo_say.png" %}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url({% static "assets/images/com.jpg" %});">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:85%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Pet Supplies Plus
+                                                </h3>
+                                                <p>"I've been purchasing pet products from D.R Trade & Marketing for
+                                                    years, and
+                                                    I'm always impressed with their quality and selection. They make it
+                                                    easy for me to provide the best for my furry friends."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url({% static "assets/images/com2sdf.jpg" %});">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:80%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Pet Link
+                                                </h3>
+                                                <p>"I own a pet store, and partnering with D.R Trade & Marketing for my
+                                                    product
+                                                    needs has been a game-changer. Their competitive prices and
+                                                    exceptional customer service make them my go-to supplier."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url({% static "assets/images/com4ew.jpg" %});">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:89%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Pet Supplies
+                                                </h3>
+                                                <p>"As a pet professional, I rely on D.R Trade & Marketing to fulfill my
+                                                    bulk
+                                                    pet product orders. They never disappoint, and their attention to
+                                                    detail ensures I receive exactly what I need, every time."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url({% static "assets/images/com5yt.jpg" %});">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:100%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Pet Plazza
+                                                </h3>
+                                                <p>"I highly recommend D.R Trade & Marketing to anyone in search of
+                                                    reliable
+                                                    and top-notch pet products. Their dedication to quality and customer
+                                                    satisfaction is unmatched."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-sec section-repeat-img" style="background-image: url({% static "assets/images/faq-bg.png" %});">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">faqs</p>
+                                    <h2 class="h2-title">Frequently <span>asked questions</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="{% static "assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <div class="faq-box">
+                                <h4 class="h4-title">How do I place an order with D.R Trade & Marketting?</h4>
+                                <p>Placing an order with us is simple and convenient. Just visit our website, browse our
+                                    product catalog, select the items you want, and add them to your cart. Proceed to
+                                    checkout, provide the necessary information, and complete your purchase. If you need
+                                    assistance, our customer support team is ready to help.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Do you offer wholesale pricing for bulk orders?</h4>
+                                <p>Absolutely! We provide competitive wholesale pricing for bulk orders. Whether you're
+                                    a retailer, distributor, or pet professional, you can benefit from our wholesale
+                                    rates. Simply reach out to our team or sign up for a wholesale account on our
+                                    website to access our discounted pricing</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">What payment methods do you accept?</h4>
+                                <p> We accept various payment methods for your convenience. These include major credit
+                                    cards such as Visa, Mastercard, American Express, as well as secure online payment
+                                    platforms. During the checkout process, you can select the payment method that suits
+                                    you best.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Do You Offer Wholesale Pricing For Bulk Orders?</h4>
+                                <p>Absolutely! We provide competitive wholesale pricing for bulk orders. Whether you're
+                                    a retailer, distributor, or pet professional, you can benefit from our wholesale
+                                    rates. Simply reach out to our team or sign up for a wholesale account on our
+                                    website to access our discounted pricing</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Yes, we value our loyal customers and offer various discounts and
+                                    loyalty programs as a token of appreciation. We encourage you to sign up for our
+                                    newsletter or follow us on social media
+                                    </p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title"> What is your return and refund policy?</h4>
+                                <p>We want you to be completely satisfied with your purchase. If you receive a damaged
+                                    or incorrect item, please contact our customer support team within a specified
+                                    timeframe. We will assist you with the return process and provide a suitable
+                                    resolution, which may include a refund or replacement, based on the circumstances.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <div class="bg-pattern bg-light repeat-img"
+                style="background-image: url({% static "assets/images/blog-pattern-bg.png" %});">
+                <section class="blog-sec section" id="blog">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sec-title text-center mb-5">
+                                        <p class="sec-sub-title mb-3">Our blog</p>
+                                        <h2 class="h2-title">Latest Publications</span></h2>
+                                        <div class="sec-title-shape mb-4">
+                                            <img src="{% static assets/images/title-shape.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url({% static "assets/images/product_05.jpg" %});"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">September.15.2021</p>
+                                            <a href="#" class="h4-title">Dog Veg Food</a>
+                                            <p>"Healthy Hounds: nutritious dog food for a happy, active life."</p>
+                                            <a href="#" class="sec-btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url({% static "assets/images/product_06.jpg" %});"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">October.15.2021</p>
+                                            <a href="#" class="h4-title">Dog Non Veg Food.</a>
+                                            <p>"Pawsome Protein: Satisfy your dog's carnivorous cravings with our
+                                                delicious non-vegetarian dog food options."</p>
+                                            <a href="#" class="sec-btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url({% static "assets/images/product_02.jpg" %});"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">November.15.2021</p>
+                                            <a href="#" class="h4-title">Beefy Bites</a>
+                                            <p>" Treat your dog to the savory goodness of our delectable beef-based dog
+                                                food.</p>
+                                            <a href="#" class="sec-btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="newsletter-sec section pt-0">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 m-auto">
+                                    <div class="newsletter-box text-center back-img white-text"
+                                        style="background-image: url({% static "assets/images/news.jpg" %});">
+                                        <div class="bg-overlay dark-overlay"></div>
+                                        <div class="sec-wp">
+                                            <div class="newsletter-box-text">
+                                                <h2 class="h2-title">Subscribe our newsletter</h2>
+                                            </div>
+                                            <form action="#" class="newsletter-form">
+                                                <input type="email" class="form-input"
+                                                    placeholder="Enter your Email Here" required>
+                                                <button type="submit" class="sec-btn primary-btn">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- footer starts  -->
+            <footer class="site-footer" id="contact">
+                <div class="top-footer section">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="footer-info">
+                                        <div class="footer-logo">
+                                            <a href="index.html">
+                                                <img src="{% static "assets/images/logo.png" %}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-github-alt"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="footer-flex-box">
+                                        <div class="footer-table-info">
+                                            <h3 class="h3-title">open hours</h3>
+                                            <ul>
+                                                <li><i class="uil uil-clock"></i> Mon-Thurs : 9am - 22pm</li>
+                                                <li><i class="uil uil-clock"></i> Fri-Sun : 11am - 22pm</li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu food-nav-menu">
+                                            <h3 class="h3-title">Links</h3>
+                                            <ul class="column-2">
+                                                <li>
+                                                    <a href="/" class="footer-active-menu">Home</a>
+                                                </li>
+                                                <li><a href="About.html">About</a></li>
+                                                <li><a href="/">Menu</a></li>
+                                                <li><a href="Products.html">Products</a></li>
+                                                <li><a href="Blog.html">Blog</a></li>
+                                                <li><a href="Contact.html">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu">
+                                            <h3 class="h3-title">Company</h3>
+                                            <ul>
+                                                <li><a href="/">Terms & Conditions</a></li>
+                                                <li><a href="/">Privacy Policy</a></li>
+                                                <li><a href="/">Cookie Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2021 <span class="name">
+                                        <a href="https://malachitetechnology.in/">Malachite Technology</a>
+                                    </span>All Rights Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scrolltop"><i class="uil uil-angle-up"></i></button>
+                    </div>
+                </div>
+            </footer>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jquery  -->
+    <script src="{% static "assets/js/jquery-3.5.1.min.js" %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "assets/js/popper.min.js" %}"></script>
+
+    <!-- fontawesome  -->
+    <script src="{% static "assets/js/font-awesome.min.js" %}"></script>
+
+    <!-- swiper slider  -->
+    <script src="{% static "assets/js/swiper-bundle.min.js" %}"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="{% static "assets/js/jquery.mixitup.min.js" %}"></script>
+
+    <!-- fancy box  -->
+    <script src="{% static "assets/js/jquery.fancybox.min.js" %}"></script>
+
+    <!-- parallax  -->
+    <script src="{% static "assets/js/parallax.min.js" %}"></script>
+
+    <!-- gsap  -->
+    <script src="{% static "assets/js/gsap.min.js" %}"></script>
+
+    <!-- scroll trigger  -->
+    <script src="{% static "assets/js/ScrollTrigger.min.js" %}"></script>
+    <!-- scroll to plugin  -->
+    <script src="{% static "assets/js/ScrollToPlugin.min.js" %}"></script>
+    <!-- rellax  -->
+    <!-- <script src="assets/js/rellax.min.js"></script> -->
+    <!-- <script src="assets/js/rellax-custom.js"></script> -->
+    <!-- smooth scroll  -->
+    <script src="{% static "assets/js/smooth-scroll.js" %}"></script>
+    <!-- custom js  -->
+    <script src="{% static "assets/js/main.js" %}"></script>
+
+</body>
+
+</html>
